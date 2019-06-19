@@ -7,7 +7,11 @@ server.on('connection', (socket) => {
     socket.on('data', (buffer) => {
         console.log(Uint8Array.from(buffer))
 
-        var myBuffer = [];
+        let buf = new Buffer([0x02, 0, 1, 0, 0x2d])
+        console.log(buf.toString())
+        socket.write(buf)
+
+        /*var myBuffer = [];
         var str = '§aWooooo';
         var buffer = new Buffer(str, 'utf16le');
         for (var i = 0; i < buffer.length; i++) {
@@ -19,7 +23,7 @@ server.on('connection', (socket) => {
         console.log(myBuffer.toString())
         const buf = new Buffer(final)
         console.log(buf.toString())
-        socket.write(buf)
+        socket.write(buf)*/
     })
     //socket.write("-")
     //socket.write('disconnect', { reason: {
