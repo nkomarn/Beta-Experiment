@@ -1,3 +1,5 @@
+> :warning: **Archived**: this experiment resulted in a new project! Check out [Composter](https://github.com/nkomarn/Composter).
+
 # ✨ The Beta Experiment
 An experiment to see if I can create a Minecraft Beta server software in Node.JS!
 
